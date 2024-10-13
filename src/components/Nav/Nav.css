@@ -1,0 +1,16 @@
+.Nav {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.nav-link{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
