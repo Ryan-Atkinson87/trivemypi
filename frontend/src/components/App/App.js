@@ -9,6 +9,7 @@ import PiStats from '../PiStats/PiStats';
 import PiControl from '../PiControl/PiControl';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import TestBackend from '../TestBackend/TestBackend';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/pi-stats" element={<PiStats />} />
               <Route path="/pi-control" element={<PiControl />} />
+              <Route path="/test-backend" element={<TestBackend />} />
           </Routes>
         </div>
         <Footer className="Footer" />
