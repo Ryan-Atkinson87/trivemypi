@@ -6,11 +6,19 @@ def get_cpu_usage():
     """
     return psutil.cpu_percent(interval=1, percpu=True)
 
+def get_cpu_temp():
+    """
+    returns the cpu temperature
+    """
+    cpu_temp = psutil.sensors_temperatures()
+    return cpu_temp['cpu_thermal'][0].current
+
 def get_cpu_frequency():
     """
-    return the frequency of each CPU core as a list
+    returns the maximum frequency of the CPU
     """
-    return psutil.cpu_freq()
+    frequency_in_ghz = psutil.cpu_freq()
+    return frequency_in_ghz.max / 1000
 
 def get_pcnt_memory():
     """

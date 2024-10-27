@@ -1,7 +1,5 @@
 import pi_stats
 
-# need to test percent memory
-# need to convert frequency to GHz within the function, not the test
 
 """
 # test get_cpu_usage
@@ -15,10 +13,21 @@ for cpu in cpu_usage:
 """
 
 """
+# test get_cpu_temp
+cpu_temp = pi_stats.get_cpu_temp()
+print(f"Current CPU temp: {cpu_temp}\u00B0C")
+"""
+
+"""
 # test get_cpu_frequency
 cpu_frequency = pi_stats.get_cpu_frequency()
-frequency_in_ghz = cpu_frequency.max / 1000
-print(f"Max CPU frequency: {frequency_in_ghz} GHz")
+print(f"Max CPU frequency: {cpu_frequency} GHz")
+"""
+
+"""
+# test get_pcnt_memory
+pi_memory = pi_stats.get_pcnt_memory()
+print(f"% Memory used: {pi_memory}%")
 """
 
 """
