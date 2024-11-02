@@ -13,6 +13,13 @@ def get_cpu_temp():
     cpu_temp = psutil.sensors_temperatures()
     return cpu_temp['cpu_thermal'][0].current
 
+def get_pcnt_memory():
+    """
+    returns the total available memory as a percentage
+    """
+    available_memory = psutil.virtual_memory()
+    return available_memory.percent
+
 def get_cpu_frequency():
     """
     returns the maximum frequency of the CPU
@@ -20,12 +27,6 @@ def get_cpu_frequency():
     frequency_in_ghz = psutil.cpu_freq()
     return frequency_in_ghz.max / 1000
 
-def get_pcnt_memory():
-    """
-    returns the total available memory as a percentage
-    """
-    available_memory = psutil.virtual_memory()
-    return available_memory.percent
 
 def get_total_memory():
     """
