@@ -1,7 +1,7 @@
 import os
+from flask import Flask, jsonify
 from influxdb import InfluxDBClient
 
-# Initialize client
 client = InfluxDBClient(
     host='localhost',
     port=8086,

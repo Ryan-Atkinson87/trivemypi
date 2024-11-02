@@ -1,0 +1,1 @@
+plot the information from the database in a graph in the react app
