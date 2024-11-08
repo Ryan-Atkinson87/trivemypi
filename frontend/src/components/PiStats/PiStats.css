@@ -1,0 +1,28 @@
+.table-container {
+  display: grid;
+  justify-content: center;
+}
+
+button {
+  margin: 0 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: black;
+  opacity: 0.7;
+}
